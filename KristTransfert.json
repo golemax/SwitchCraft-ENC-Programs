@@ -1,0 +1,15 @@
+{
+    "IdNumber":2,
+    "TransfertLogs":[
+        {
+            "from":"APDKSU",
+            "to":"ALSPDH",
+            "fromAdress":"nohello@switchcraft",
+            "toAdress":"nohello@switchcraft",
+            "amount":0,
+            "metadata":"",
+            "cooldown":-1,
+            "info":"SUCCES"
+        }
+    ]
+}
