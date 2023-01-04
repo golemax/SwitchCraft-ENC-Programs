@@ -41,6 +41,17 @@ local function cesar(text,word)
     return text
 end
 
+local function tobinary(text, alphabet):
+    result = []
+    for i = 1, string.len(text) do
+        for j = 1, string.len(alphabet) do
+            if text[i] == text[j] then
+                result[]
+            end
+        end
+    end
+end
+
 local function encode(number,key, word)
     --binary = tobinary(number)
     text = mixed(binary, "CVTHBUK")
