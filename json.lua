@@ -196,7 +196,7 @@ function parseValue(str)
 end
 
 function decode(str)
-	str = removeWhite(str)
+	--str = removeWhite(str)
 	t = parseValue(str)
 	return t
 end
@@ -207,3 +207,10 @@ function decodeFromFile(path)
 	file.close()
 	return decoded
 end
+
+return {
+	decode = decode,
+	encode = encode,
+	decodeFromFile = decodeFromFile,
+	encodePretty = encodePretty
+}
