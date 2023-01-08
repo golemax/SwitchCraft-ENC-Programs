@@ -2,9 +2,7 @@ local w = require("w")
 local r = require("r")
 local k = require("k")
 local jua = require("jua")
-os.loadAPI(fs.exists("json.lua") and "json.lua" or "json")
-local json = _G.json
-_G.json = nil
+local json = require("json")
 local await = jua.await
 
 r.init(jua)
@@ -26,8 +24,8 @@ jua.go(
   function()
     local name = "3k"
     local success, address = await(k.name, name)
-    local success, b = await(k.address, address.owner)
     local owner = address.owner
+    local success, b = await(k.address, owner)
     local balance = b.balance
     if success then
       print("Adresse: "..owner.." ("..name..".kst)")
