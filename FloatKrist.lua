@@ -20,14 +20,32 @@ jua.on("terminate", function()
 end)
 
 jua.setInterval(function()
-    transactions = await(addressTransactions(owner))
-    lastTransactions = 
-    for i = transactions.transactions do
-
+    local transactions = await(k.addressTransactions(owner))
+    local logs = json.decodeFromFile("FloatKristLog.json")
+    local lastTransactions = logs[#logs]
+    local queue = {}
+    
+    for i, v in pairs(transactions.transactions) do
+      if v.id == lastTransactions.FromId then
+        break
+      end
+      if v.to == owner then
+        queue[#queue+1] = v
+      end
+    end
+    for i, v in pairs(queue) do
+      transfert(v)
     end
   end, 1
 )
 
-local function viewKrist(name):
+local function transfert(transaction)
+  local data = json.decodeFromFile("FloatKristData.json")
+  if transaction.send_metaname == "fk" then
+    
+  end
+end
+
+local function viewKrist(name)
 
 end

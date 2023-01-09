@@ -1,6 +1,3 @@
-[
-    {
-        "adress":"nohello@switchcraft.kst",
-        "floatAmount":200
-    }
-]
+{
+    "nohello@switchcraft.kst": 200
+}
