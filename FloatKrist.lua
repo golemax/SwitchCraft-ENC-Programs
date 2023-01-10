@@ -41,8 +41,13 @@ jua.setInterval(function()
 
 local function transfert(transaction)
   local data = json.decodeFromFile("FloatKristData.json")
-  if transaction.send_metaname == "fk" then
-    
+  local transactionData = k.parseMeta(transaction.metadata)
+  -- Exemple of valid metadata: "amount=1.02;destination=nohello@switchcraft.pw"
+
+  if transaction.name == "fk" then
+    if k.parseMeta(transaction.meta.destination).name != nil then
+      
+    end
   end
 end
 
