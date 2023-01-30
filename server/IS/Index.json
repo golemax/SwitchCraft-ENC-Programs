@@ -1,0 +1,37 @@
+[
+    {
+        "entreprises":[
+            {
+                "name":"catmall",
+                "description":"A place of stores"
+            }
+        ],
+        "systems":[
+            {
+                "name":"market",
+                "description":"Place where you can buy and sometimes sell your items",
+                "linkTo":null,
+                "exemples":"catmall"
+            },
+            {
+                "name":"markets",
+                "linkTo":"market"
+            },
+            {
+                "name":"store",
+                "linkTo":"market"
+            },
+            {
+                "name":"stores",
+                "linkTo":"store"
+            }
+        ],
+        "ports":[
+            {
+                "nubmer":80,
+                "protocol":"http",
+                "description":"Protocol for brut hypertext transfert"
+            }
+        ]
+    }
+]

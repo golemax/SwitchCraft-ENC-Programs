@@ -1,0 +1,12 @@
+{
+    "http":"Hypertext Transfer Protocol",
+    "https":"Hypertext Transfer Protocol Secure",
+    "ftp":"File Transfer Protocol",
+    "ftps":"File Transfer Protocol Secure",
+    "ttp":"Text Transfer Protocol",
+    "ttps":"Text Transfer Protocol Secure",
+    "btp":"Binary Transfer Protocol",
+    "btps":"Binary Transfer Protocol Secure",
+    "wss":"WebSocket",
+    "ssh":"Secure Shell"
+}

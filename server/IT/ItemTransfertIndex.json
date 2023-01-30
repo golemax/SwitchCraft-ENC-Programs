@@ -1,0 +1,21 @@
+{
+  "bridges":[
+    {
+      "Id":"Manipulator-728",
+      "Owner":"nohello"
+    }
+  ],
+  "storage":[
+    {
+      "id":"Chest-638",
+      "items":[
+        {
+          "item":"minecraft:stick",
+          "nbt":"",
+          "owner":"nohello",
+          "amount":5
+        }
+      ]
+    }
+  ]
+}
