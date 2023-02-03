@@ -25,3 +25,14 @@
 |IT|Remote item exchange system (will integrate a cloud for items)|
 |DTP|Data transfer protocol to avoid incompatibilities|IS|
 |HP|Integration of a \help and \help command to give indications on the operation of switchcraft and these stores, system, ect|IS|
+
+```mermaid
+graph LR;
+    KF-- Secure Internal Trancactions --->KT;
+    HDV-- Direct Transaction --->KF;
+    KE-- Remote Transaction --->KF;
+    DTP-- Protocols List --->IS;
+    HP-- Service List --->IS;
+    ENCC;
+
+```
