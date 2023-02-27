@@ -15,6 +15,7 @@ Information in ENC databases can be manually verified to avoid any false informa
  |HP|[Helper Program](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/HP)|
  |SD|[Shop Data](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/SD)|
  |PED|[Private ENC Database](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/PED)|
+ |ESM|[External Screen Management](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/ESM)|
   
 ## Details: 
 
@@ -23,14 +24,15 @@ Information in ENC databases can be manually verified to avoid any false informa
  |KF|non-integer krist transfer|KT| 
  |KT|Internal ENC tool to handle krists sent to specific adress| 
  |KE|krist transfer without ingame commands|KT, KF| 
- |ENCC|A cinema under the ENC centre| 
+ |ENCC|A cinema under the ENC centre|PED|
  |IS|System to index each stores, system, port usage, ect| 
- |HDV|Store where everyone can put items on sale (will integrate an auction system)| 
+ |HDV|Store where everyone can put items on sale (will integrate an auction system)|PED|
  |IT|Remote item exchange system (will integrate a cloud for items)| 
  |DTP|Data transfer protocol to avoid incompatibilities|IS| 
  |HP|Integration of a help and help command to give indications on the operation of switchcraft and these stores, system, ect|IS|
  |SD|Integration to overlay glass for indicate information for specific shop on player is at front of him|IS|
  |PED|Database of ENC for ENC services||
+ |ESM|Program for managing what's showing of screens at front of ENC|PED|
  
   
 ```mermaid
@@ -40,6 +42,7 @@ KE-- Remote Transaction --->KF
 HDV -- Direct Transaction --->KF
 HDV-- Get Item Data --->PED
 ENCC-- Get Projection --->PED
+ESM-- Get Images/Diaporama --->PED
 DTP-- Protocols List --->IS
 HP-- Service List --->IS
 SD-- Shop Location ---> IS
