@@ -24,10 +24,10 @@ Information in ENC databases can be manually verified to avoid any false informa
  |:-:|:-|:-:| 
  |KF|non-integer krist transfer|KT| 
  |KT|Internal ENC tool to handle krists sent to specific adress| 
- |KE|krist transfer without ingame commands|KT, KF| 
+ |KE|krist transfer without ingame commands|KF| 
  |ENCC|A cinema under the ENC centre|PED|
  |IS|System to index each stores, system, port usage, ect| 
- |HDV|Store where everyone can put items on sale (will integrate an auction system)|PED|
+ |HDV|Store where everyone can put items on sale (will integrate an auction system)|PED, KF|
  |IT|Remote item exchange system (will integrate a cloud for items)| 
  |DTP|Data transfer protocol to avoid incompatibilities|IS| 
  |HP|Integration of a help and help command to give indications on the operation of switchcraft and these stores, system, ect|IS|
