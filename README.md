@@ -17,6 +17,7 @@ Information in ENC databases can be manually verified to avoid any false informa
  |SD|[Shop Data](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/SD)|
  |PED|[Private ENC Database](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/PED)|
  |ESM|[External Screen Management](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/ESM)|
+ |KES|Krist Exchange Statistics|
   
 ## Details: 
 
@@ -34,6 +35,7 @@ Information in ENC databases can be manually verified to avoid any false informa
  |SD|Integration to overlay glass for indicate information for specific shop on player is at front of him|IS|
  |PED|Database of ENC for ENC services||
  |ESM|Program for managing what's showing of screens at front of ENC|PED|
+ |KES|Statistics of the number of krist trades and the size of the krist trades from the last krist trades||
  
   
 ```mermaid
@@ -47,6 +49,7 @@ ESM-- Get Images/Diaporama --->PED
 DTP-- Protocols List --->IS
 HP-- Service List --->IS
 SD-- Shop Location ---> IS
+KES
 ```
 
 # Center
@@ -62,7 +65,7 @@ The building reduces its CO2 production for the environment and refuses to be pa
 |Floor 4||
 |Floor 3||
 |Floor 2||
-|Floor 1|Raffle of LightningReflex|
+|Floor 1|Raffle of LightningReflex And Krist Exchange Statistics|
 |RDC|Common Shop|
 |Basement 1|Entrance of the cinema and show what will be the next screening at the cinema|
 |Basement 2|Cinema|
