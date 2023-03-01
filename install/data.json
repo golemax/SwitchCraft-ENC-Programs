@@ -1,0 +1,161 @@
+{
+    "client":[
+        {
+            "name":"Krist transfert API",
+            "alias":"KE",
+            "program":"KE/KristTransfertAPI.lua",
+            "dependencies":["k"]
+        },
+        {
+            "name":"Data Transfert Protocol API",
+            "alias":"DTP",
+            "program":"DTP/DataTransfertProtocolAPI.lua",
+            "dependencies":[]
+        },
+        {
+            "name":"Helper Program API",
+            "alias":"HP",
+            "program":"HP/HelperProgramAPI.lua",
+            "dependencies":[]
+        },
+        {
+            "name":"Shop Data API",
+            "alias":"SD",
+            "program":"SD/ShopDataAPI.lua",
+            "dependencies":[]
+        },
+        {
+            "name":"Krist Exchange Statistics API",
+            "alias":"KES",
+            "program":"KES/KristExchangeStatisticsAPI.lua",
+            "dependencies":[]
+        }
+    ],
+    "server":[
+        {
+            "name":"Float Krist",
+            "alias":"KF",
+            "program":"KF/FloatKrist.lua",
+            "dependencies":["k","json"],
+            "link":["KT","ORO"]
+        },
+        {
+            "name":"Krist transaction",
+            "alias":"KT",
+            "program":"KT/Kristtransaction.lua",
+            "dependencies":["k"],
+            "link":[]
+        },
+        {
+            "name":"Krist transfert",
+            "alias":"KE",
+            "program":"KE/KristTransfert.lua",
+            "dependencies":[],
+            "link":["KF"]
+        },
+        {
+            "name":"Cinema",
+            "alias":"ENCC",
+            "program":"ENCC/Cinema.lua",
+            "dependencies":[],
+            "link":["PED"]
+        },
+        {
+            "name":"Indexing System",
+            "alias":"IS",
+            "program":"IS/IndexingSystem.lua",
+            "dependencies":["json"],
+            "link":[]
+        },
+        {
+            "name":"Common Shop",
+            "alias":"HDV",
+            "program":"HDV/CommonShop.lua",
+            "dependencies":["k"],
+            "link":["KF","PED"]
+        },
+        {
+            "name":"Item Transfert",
+            "alias":"IT",
+            "program":"IT/ItemTransfert.lua",
+            "dependencies":[],
+            "link":["PED"]
+        },
+        {
+            "name":"Data Transfert Protocol",
+            "alias":"DTP",
+            "program":"DTP/DataTransfertProtocol.lua",
+            "dependencies":["json"],
+            "link":["IS"]
+        },
+        {
+            "name":"Helper Program",
+            "alias":"HP",
+            "program":"HP/HelperProgram.lua",
+            "dependencies":["json"],
+            "link":["IS"]
+        },
+        {
+            "name":"Shop Data",
+            "alias":"SD",
+            "program":"SD/ShopData.lua",
+            "dependencies":["json"],
+            "link":["IS"]
+        },
+        {
+            "name":"Private ENC Database",
+            "alias":"PED",
+            "program":"PED/PrivateENCDatabase.lua",
+            "dependencies":["json"],
+            "link":[]
+        },
+        {
+            "name":"External Screen Management",
+            "alias":"ESM",
+            "program":"ESM/ExternalScreenManagement.lua",
+            "dependencies":[],
+            "link":["PED"]
+        },
+        {
+            "name":"Krist Exchange Statistics",
+            "alias":"KES",
+            "program":"KES/KristExchangeStatistics.lua",
+            "dependencies":["json"],
+            "link":["IS"]
+        },
+        {
+            "name":"One Request Only",
+            "alias":"ORO",
+            "program":"ORO/One Request Only.lua",
+            "dependencies":[],
+            "link":["IS"]
+        }
+    ],
+    "libs":[
+        {
+            "name":"k",
+            "location":"lib/k.lua",
+            "dependencies":["jua", "json", "w", "r"]
+        },
+        {
+            "name":"w",
+            "location":"lib/w.lua",
+            "dependencies":["jua"]
+        },
+        {
+            "name":"r",
+            "location":"lib/r.lua",
+            "dependencies":["jua"]
+        },
+        {
+            "name":"jua",
+            "location":"lib/jua.lua",
+            "dependencies":[]
+        },
+        {
+            "name":"json",
+            "location":"lib/json.lua",
+            "dependencies":[]
+        }
+    ]
+}

@@ -3,27 +3,15 @@
         "entreprises":[
             {
                 "name":"catmall",
-                "description":"A place of stores"
+                "description":"A place of stores",
+                "systems":["market"]
             }
         ],
         "systems":[
             {
                 "name":"market",
                 "description":"Place where you can buy and sometimes sell your items",
-                "linkTo":null,
-                "exemples":"catmall"
-            },
-            {
-                "name":"markets",
-                "linkTo":"market"
-            },
-            {
-                "name":"store",
-                "linkTo":"market"
-            },
-            {
-                "name":"stores",
-                "linkTo":"store"
+                "alias":["markets","store","stores"]
             }
         ],
         "ports":[
@@ -31,6 +19,14 @@
                 "nubmer":80,
                 "protocol":"http",
                 "description":"Protocol for brut hypertext transfert"
+            }
+        ],
+        "public":[
+            {
+                "name":"Unique Identifier",
+                "description":"Unique identifier can be use for all programs",
+                "alias":["UID"],
+                "value":0
             }
         ]
     }

@@ -18,6 +18,7 @@ Information in ENC databases can be manually verified to avoid any false informa
  |PED|[Private ENC Database](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/PED)|
  |ESM|[External Screen Management](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/ESM)|
  |KES|[Krist Exchange Statistics](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/KES)|
+ |ORO|One Request Only|
   
 ## Details: 
 
@@ -25,7 +26,7 @@ Information in ENC databases can be manually verified to avoid any false informa
  |:-:|:-|:-:| 
  |KF|non-integer krist transfer|KT| 
  |KT|Internal ENC tool to handle krists sent to specific adress| 
- |KE|krist transfer without ingame commands|KF| 
+ |KE|krist transfer with computers interactions|KF| 
  |ENCC|A cinema under the ENC centre|PED|
  |IS|System to index each stores, system, port usage, ect| 
  |HDV|Store where everyone can put items on sale (will integrate an auction system)|PED, KF|
@@ -36,6 +37,7 @@ Information in ENC databases can be manually verified to avoid any false informa
  |PED|Database of ENC for ENC services||
  |ESM|Program for managing what's showing of screens at front of ENC|PED|
  |KES|Statistics of the number of krist trades and the size of the krist trades from the last krist trades||
+ |ORO|Library to avoid having several computers responding to a single request|IS|
  
   
 ```mermaid
@@ -44,12 +46,14 @@ KF-- Secure Internal Trancactions --->KT
 KE-- Remote Transaction --->KF
 HDV -- Direct Transaction --->KF
 HDV-- Get Item Data --->PED
+IT-- Set Items --->PED
 ENCC-- Get Projection --->PED
 ESM-- Get Images/Diaporama --->PED
 DTP-- Protocols List --->IS
 HP-- Service List --->IS
 SD-- Shop Location ---> IS
-KES
+KES-- Trades Statistics ---> IS
+ORO-- Get Unique Identifier ---> IS
 ```
 
 # Center
