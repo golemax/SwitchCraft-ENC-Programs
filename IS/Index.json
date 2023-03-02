@@ -1,33 +1,31 @@
-[
-    {
-        "entreprises":[
-            {
-                "name":"catmall",
-                "description":"A place of stores",
-                "systems":["market"]
-            }
-        ],
-        "systems":[
-            {
-                "name":"market",
-                "description":"Place where you can buy and sometimes sell your items",
-                "alias":["markets","store","stores"]
-            }
-        ],
-        "ports":[
-            {
-                "nubmer":80,
-                "protocol":"http",
-                "description":"Protocol for brut hypertext transfert"
-            }
-        ],
-        "public":[
-            {
-                "name":"Unique Identifier",
-                "description":"Unique identifier can be use for all programs",
-                "alias":["UID"],
-                "value":0
-            }
-        ]
-    }
-]
+{
+    "entreprises": [
+        {
+            "name": "catmall",
+            "description": "A place of stores",
+            "systems": ["market"]
+        }
+    ],
+    "systems": [
+        {
+            "name": "market",
+            "description": "Place where you can buy and sometimes sell your items",
+            "alias": ["markets", "store", "stores"]
+        }
+    ],
+    "ports": [
+        {
+            "number": 80,
+            "protocol": "http",
+            "description": "Protocol for brut hypertext transfert"
+        }
+    ],
+    "public": [
+        {
+            "name": "Unique Identifier",
+            "description": "Unique identifier can be use for all programs",
+            "alias": ["UID"],
+            "value": 0
+        }
+    ]
+}
