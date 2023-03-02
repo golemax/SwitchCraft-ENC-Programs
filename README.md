@@ -68,8 +68,8 @@ The building reduces its CO2 production for the environment and refuses to be pa
 |Floor 5||
 |Floor 4||
 |Floor 3||
-|Floor 2||
-|Floor 1|Raffle of LightningReflex And Krist Exchange Statistics|
+|Floor 2|Krist Exchange Statistics|
+|Floor 1|Sponsors floor (Raffle of LightningReflex)|
 |RDC|Common Shop|
 |Basement 1|Entrance of the cinema and show what will be the next screening at the cinema|
 |Basement 2|Cinema|
