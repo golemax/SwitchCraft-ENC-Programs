@@ -18,7 +18,7 @@ Information in ENC databases can be manually verified to avoid any false informa
  |PED|[Private ENC Database](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/PED)|
  |ESM|[External Screen Management](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/ESM)|
  |KES|[Krist Exchange Statistics](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/KES)|
- |ORO|One Request Only|
+ |ORO|[One Request Only](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/ORO)|
   
 ## Details: 
 
