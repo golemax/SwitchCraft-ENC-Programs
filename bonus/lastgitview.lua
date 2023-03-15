@@ -16,5 +16,5 @@ while true do
   paintutils.drawFilledBox(3, 4, width-size-3, height/3*2-1, colors.yellow)
   term.setCursorPos(width/2-#tostring(currentTime-time)/2,height/3*2+2)
   term.setBackgroundColor(colors.black)
-  term.write(tostring(currentTime-time))
+  --term.write(tostring(currentTime-time))
 end
