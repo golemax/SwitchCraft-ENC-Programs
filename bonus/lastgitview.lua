@@ -10,7 +10,7 @@ while true do
   local request = http.get("https://worldtimeapi.org/api/timezone/Etc/UTC")
   currentTime = json.decode(request.readAll()).unixtime
   width, height = term.getSize()
-  size = 1/((currentTime-time+middleTime)/(2*middleTime))*(width-6)
+  size = 1/((currentTime-time+middleTime)/(2*middleTime))*((width-6)/2)
   term.setBackgroundColor(colors.black)
   term.clear()
   paintutils.drawBox(2, 3, width-2, height/3*2, colors.white)
