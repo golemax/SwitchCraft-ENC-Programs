@@ -15,9 +15,59 @@
     ],
     "ports": [
         {
-            "number": 80,
-            "protocol": "http",
-            "description": "Protocol for brut hypertext transfert"
+            "number": 19,
+            "name": "opus-trust",
+            "protocol": "OPUS OS trust protocol"
+        },
+        {
+            "number": 22,
+            "name": "opus-stelnet",
+            "protocol": "OPUS OS telnet protocol (encrypted)"
+        },
+        {
+            "number": 23,
+            "name": "opus-telnet",
+            "protocol": "OPUS OS telnet protocol (unencrypted)"
+        },
+        {
+            "number": 139,
+            "name": "opus-samba",
+            "protocol": "OPUS OS samba protocol"
+        },
+        {
+            "number": 161,
+            "name": "opus-snmp",
+            "protocol": "OPUS OS SNMP protocol"
+        },
+        {
+            "number": 180,
+            "name": "ldd-drawtoy",
+            "protocol": "drawtoy protocol"
+        },
+        {
+            "number": 188,
+            "name": "opus-proxy",
+            "protocol": "OPUS OS proxy protocol"
+        },
+        {
+            "number": 701,
+            "name": "ldd-tron",
+            "protocol": "TRON protocol"
+        },
+        {
+            "number": 999,
+            "name": "opus-discovery",
+            "protocol": "OPUS OS discovery protocol"
+        },
+        {
+            "number": 1005,
+            "name": "ldd-wireless-rs",
+            "protocol": "Wireless redstone"
+        },
+        {
+            "number": 1294,
+            "name": "ldd-ldris",
+            "protocol": "LDRis protocol"
         }
     ],
     "public": [
