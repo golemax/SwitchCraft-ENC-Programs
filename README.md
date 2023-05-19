@@ -8,7 +8,6 @@ Information in ENC databases can be manually verified to avoid any false informa
  |KF|[Float Krist](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/KF)|
  |KT|[Krist transaction](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/KT)| 
  |KE|[Krist transfert](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/KE)| 
- |ENCC|[Cinema](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/ENCC)| 
  |IS|[Indexing System](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/IS)| 
  |HDV|[Common Shop](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/HDV)| 
  |IT|[Item Transfert](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/IT)|
@@ -27,7 +26,6 @@ Information in ENC databases can be manually verified to avoid any false informa
  |KF|non-integer krist transfer|KT| 
  |KT|Internal ENC tool to handle krists sent to specific adress| 
  |KE|krist transfer with computers interactions|KF| 
- |ENCC|A cinema under the ENC centre|PED|
  |IS|System to index each stores, system, port usage, ect| 
  |HDV|Store where everyone can put items on sale (will integrate an auction system)|PED, KF|
  |IT|Remote item exchange system (will integrate a cloud for items)| 
@@ -47,7 +45,6 @@ KE-- Remote Transaction --->KF
 HDV -- Direct Transaction --->KF
 HDV-- Get Item Data --->PED
 IT-- Set Items --->PED
-ENCC-- Get Projection --->PED
 ESM-- Get Images/Diaporama --->PED
 DTP-- Protocols List --->IS
 HP-- Service List --->IS
@@ -71,8 +68,8 @@ The building reduces its CO2 production for the environment and refuses to be pa
 |Floor 2|Krist Exchange Statistics|
 |Floor 1|Sponsors floor (Raffle of LightningReflex)|
 |RDC|Common Shop|
-|Basement 1|Entrance of the cinema and show what will be the next screening at the cinema|
-|Basement 2|Cinema|
+|Basement 1||
+|Basement 2||
 |Basement 3|System's computers|
 |Basement 4|Storage|
 |Basement 5|transformations (to craft, heat, wet, ... items)|
