@@ -18,6 +18,7 @@ Information in ENC databases can be manually verified to avoid any false informa
  |ESM|[External Screen Management](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/ESM)|
  |KES|[Krist Exchange Statistics](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/KES)|
  |ORO|[One Request Only](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/ORO)|
+ |SE|[Service](https://github.com/SmallGolem/SwitchCraft-ENC-Programs/tree/main/SE)|
   
 ## Details: 
 
@@ -36,6 +37,7 @@ Information in ENC databases can be manually verified to avoid any false informa
  |ESM|Program for managing what's showing of screens at front of ENC|PED|
  |KES|Statistics of the number of krist trades and the size of the krist trades from the last krist trades||
  |ORO|Library to avoid having several computers responding to a single request|IS|
+ |SE|A service token manager to manage api calls|PED|
  
   
 ```mermaid
@@ -46,6 +48,7 @@ HDV -- Direct Transaction --->KF
 HDV-- Get Item Data --->PED
 IT-- Set Items --->PED
 ESM-- Get Images/Diaporama --->PED
+SE-- Set token --->PED
 DTP-- Protocols List --->IS
 HP-- Service List --->IS
 SD-- Shop Location ---> IS
@@ -66,7 +69,7 @@ The building reduces its CO2 production for the environment and refuses to be pa
 |Floor 4||
 |Floor 3||
 |Floor 2|Krist Exchange Statistics|
-|Floor 1|Sponsors floor (Raffle of LightningReflex)|
+|Floor 1||
 |RDC|Common Shop|
 |Basement 1||
 |Basement 2||
