@@ -54,13 +54,6 @@
             "link":["KF"]
         },
         {
-            "name":"Cinema",
-            "alias":"ENCC",
-            "program":"ENCC/Cinema.lua",
-            "dependencies":[],
-            "link":["PED"]
-        },
-        {
             "name":"Indexing System",
             "alias":"IS",
             "program":"IS/IndexingSystem.lua",
@@ -129,6 +122,13 @@
             "program":"ORO/One Request Only.lua",
             "dependencies":[],
             "link":["IS"]
+        },
+        {
+            "name":"Service",
+            "alias":"SE",
+            "program":"SE/Service.lua",
+            "dependencies":[],
+            "link":["PED"]
         }
     ],
     "libs":[
