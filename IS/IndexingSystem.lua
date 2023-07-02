@@ -7,15 +7,13 @@ local indexFileName = "Index.json"
 local indexData
 
 
-local function add(itype, object, force)
+local function add(itype, object)
     update()
     for key, value in pairs(indexData) do
         if key == itype then
-            if value == indexData[key] and force == false then
-                indexData[key][#indexData[key] + 1] = object
-                update()
-                return true
-            end
+            indexData[key][#indexData[key] + 1] = object
+            update()
+            return true
         end
     end
     return false
@@ -23,11 +21,11 @@ end
 
 local function get(itype, attribut, value)
     update()
-    for a, b in pairs(indexData) do
-        if a == itype then
-            for c, d in ipairs(indexData[key]) do
-                if d[attribut] == value then
-                    return d
+    for key, value in pairs(indexData) do
+        if key == itype then
+            for i=1, #indexData[key] do
+                if indexData[key][i][attribut] == value then
+                    return indexData[key][i]
                 end
             end
         end
@@ -71,23 +69,39 @@ if modem and modem.isWireless() then
         local _, _, _, replyChannel, message = os.pullEvent("modem_message")
         if type(message) != "table" then
             modem.transmit(replyChannel, 133, {"err":"Message isn't a table"})
-        elseif #message < 4 then
+        elseif #message < 1 then
             modem.transmit(replyChannel, 133, {"err":"Not enough arguments"})
-        elseif #message > 4 then
-            modem.transmit(replyChannel, 133, {"err":"Too many arguments"})
         else
             local mode = message[1]
 
-            local value1 = message[2]
-            local value2 = message[3]
-            local value3 = message[4]
+            local itype = message[2]
+            local attribut = message[3]
+            local value = message[4]
 
             if mode == "get" then
-                get(value1,value2,value3)
+                if #message < 4 then
+                    modem.transmit(replyChannel, 133, {"err":"Not enough arguments"})
+                elseif #message > 4 then
+                    modem.transmit(replyChannel, 133, {"err":"Too many arguments"})
+                else
+                    get(itype,attribut,value)
+                end
             elseif mode == "rm" then
-                remove(value1,value2,value3)
-            elseif mode == "add" then   
-                add(value1,value2,value3)
+                if #message < 4 then
+                    modem.transmit(replyChannel, 133, {"err":"Not enough arguments"})
+                elseif #message > 4 then
+                    modem.transmit(replyChannel, 133, {"err":"Too many arguments"})
+                else
+                    remove(itype,attribut,value)
+                end
+            elseif mode == "add" then
+                if #message < 3 then
+                    modem.transmit(replyChannel, 133, {"err":"Not enough arguments"})
+                elseif #message > 3 then
+                    modem.transmit(replyChannel, 133, {"err":"Too many arguments"})
+                else
+                    add(itype,attribut)
+                end
             else
                 modem.transmit(replyChannel, 133, {"err":"Invalid mode was specified"})
             end
