@@ -52,9 +52,11 @@ local function remove(itype, attribut, value)
 end
 
 local function update()
-    index = fs.open(indexFileName, "w")
-    index.write(json.encodePretty(indexData))
-    index.close()
+    if indexData ~= nil then
+        index = fs.open(indexFileName, "w")
+        index.write(json.encodePretty(indexData))
+        index.close()
+    end
     indexData = json.decodeFromFile(indexFileName)
 end
 
