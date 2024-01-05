@@ -64,15 +64,15 @@ The building reduces its CO2 production for the environment and refuses to be pa
 |Floor|Use|
 |:-:|:-|
 |Roof|Natural park in the sky and gps antenna|
-|Floor 6||
+|Floor 6|Common Library|
 |Floor 5||
-|Floor 4||
-|Floor 3||
-|Floor 2|Krist Exchange Statistics|
-|Floor 1||
+|Floor 4|ENC API Reference (for developers|
+|Floor 3|Switchcraft Stats|
+|Floor 2|Krist Exchange Statistics)|
+|Floor 1|Advenced Common Shop|
 |RDC|Common Shop|
-|Basement 1||
-|Basement 2||
+|Basement 1|Visual Data Exchange (requests and reponses from/to enc api)|
+|Basement 2|Stats Room|
 |Basement 3|System's computers|
 |Basement 4|Storage|
 |Basement 5|transformations (to craft, heat, wet, ... items)|
